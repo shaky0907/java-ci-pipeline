@@ -4,5 +4,7 @@ java:
   -"stable"
 
 script:
-  - ant
+  - ant compile
+  - ant jar
+  - ant junit
 
