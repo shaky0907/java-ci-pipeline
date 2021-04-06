@@ -1,5 +1,6 @@
 language: java
+jdk: oraclejdk8
 
-jdk:
-  -"stable"
+script:
+  - ant
 
