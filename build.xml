@@ -59,7 +59,7 @@
   </target>
 
   <target name="jar">
-    <jar destfile="Jar/Test.jar" basedir="staging">
+    <jar destfile="Jar/Test.jar" basedir="build">
       <zipfileset src="lib\junit-4.12.jar" excludes="META-INF/*"/>
       <manifest>
         <attribute name="Main-Class" value="Test"/>
