@@ -4,8 +4,9 @@ java:
   -"stable"
 
 before_script:
+  - sudo apt-get install ant-optional
   - sudo apt-get install junit
 
 script:
-  - ant
+  - ant -lib
 
