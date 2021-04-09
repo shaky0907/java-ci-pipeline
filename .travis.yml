@@ -3,8 +3,9 @@ language: java
 java:
   -"stable"
 
+before_script:
+  - sudo apt-get install junit
+
 script:
-  - ant compile
-  - ant jar
-  - ant junit
+  - ant
 

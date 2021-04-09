@@ -46,26 +46,7 @@
     </junit>
   </target>
 
-  <target name = "junit" depends="compile">
-    <junit haltonerror="true" haltonfailure="true" fork="true">
-      <formatter type="plain" usefile="false"/>
-      <classpath location="lib\junit-4.12.jar"/>
-      <test name="Test"/>
-      <classpath>
-        <path refid="classpath.test"/>
-        <pathelement location="Jar"/>
-      </classpath>
-    </junit>
-  </target>
 
-  <target name="jar">
-    <jar destfile="Jar/Test.jar" basedir="build">
-      <zipfileset src="lib\junit-4.12.jar" excludes="META-INF/*"/>
-      <manifest>
-        <attribute name="Main-Class" value="Test"/>
-      </manifest>
-    </jar>
-  </target>
 
 
   <!-- delete all class files -->
