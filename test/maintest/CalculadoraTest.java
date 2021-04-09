@@ -16,21 +16,26 @@ public class CalculadoraTest {
     public void testSumar(){
         escenario();
         assertTrue(calculadora.sumar(2,2)==(2+2));
+        assertTrue(calculadora.sumar(3,3)==(3+3));
+
     }
     @Test
     public void testRestar(){
         escenario();
         assertTrue(calculadora.restar(2,2)==(2-2));
+        assertTrue(calculadora.restar(4,4)==(4-4));
     }
     @Test
     public void testMult(){
         escenario();
         assertTrue(calculadora.mult(2,2)==(2*2));
+        assertTrue(calculadora.mult(5,5)==(5*5));
     }
     @Test
     public void testDiv(){
         escenario();
         assertTrue(calculadora.div(2,2)==(2/2));
+        assertTrue(calculadora.div(6,6)==(6/6));
     }
 
 }
